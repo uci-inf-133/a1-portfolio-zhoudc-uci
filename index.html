@@ -7,18 +7,112 @@ EMAIL: zhoudc@uci.edu
 -->
 
 <head>
-  <meta charset="utf-8">
-  <meta name="author" content="Derek Zhou">
-  <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>A1: Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Derek Zhou">
+    <meta name="description" content="Website of Derek Zhou for professional contact">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <title>Derek Zhou's Website</title>
 </head>
+
 <body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
+    <div class="background-horizontal"></div>
+    <div class="background-vertical"></div>
+
+    <aside class="sidebar">
+        <nav class="toc">
+            <ul>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Technical Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#research">Research</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="container">
+        <img src="profile.jpeg" alt="Derek Zhou's profile photo">
+        <header>
+            <h1>Derek Zhou</h1>
+            <p class="contact">
+                zhoudc@uci.edu | (707) 241-5500 | Irvine, CA
+            </p>
+        </header>
+
+        <section id="education">
+            <h2><span class="material-icons">school</span> Education</h2>
+            <div class="item">
+                <h3>University of California, Irvine</h3>
+                <span class="date">Aug. 2023 - June 2027 (anticipated)</span>
+                <p><em>Bachelor of Science in Computer Science</em></p>
+                <ul>
+                    <li>GPA: 3.790, Dean's Honor List</li>
+                    <li>
+                        Selected Coursework: Intermediate Programming, Programming in C/C++, 
+                        Software Engineering, Data Structure Implementation and Analysis
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2><span class="material-icons">done_all</span> Technical Skills</h2>
+            <p>
+                Python, JavaScript, C++, C, .NET, T/SQL, HTML, CSS
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2><span class="material-icons">rebase_edit</span> Projects</h2>
+
+            <div class="item">
+                <h3>Abacus.AI</h3>
+                <ul>
+                    <li>Developed two predictive modeling projects using Abacus.AI's machine learning platform.</li>
+                    <li>Used SQL for data cleaning and Python for model development.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <h3>Code Interpreter (Python)</h3>
+                <ul>
+                    <li>Built a simple programming language interpreter.</li>
+                    <li>Added functionality to generate new code files.</li>
+                    <li>Learned fundamentals of parsers and interpreters.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <h3>STL Implementation (C++)</h3>
+                <ul>
+                    <li>Implemented core components of the C++ STL.</li>
+                    <li>Strengthened understanding of memory management and OOP.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <h3>Graph Coloring Algorithm (C++)</h3>
+                <ul>
+                    <li>Implemented an optimized graph coloring algorithm.</li>
+                    <li>Used merge sort to improve performance.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="research">
+            <h2><span class="material-icons">assignment</span> Research</h2>
+            <div class="item">
+                <h3>Cambridge Center for International Research</h3>
+                <span class="date">Aug. 2022 - Jan. 2023</span>
+                <ul>
+                    <li>Worked with knowledge representation and reasoning (KRR) algorithms.</li>
+                    <li>Researched the 8-Queens problem and analyzed 3D solution models.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
 </body>
 </html>
