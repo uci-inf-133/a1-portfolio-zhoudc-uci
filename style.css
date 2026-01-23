@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.background-horizontal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("background_horizontal.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.background-vertical {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("background_vertical.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.container {
+    width: 650px;
+    margin: 50px auto;
+    padding: 50px;
+    padding-bottom: 500px;
+    background-color: #E1EBF1;
+    opacity: 0.95;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 50%;
+    display: block;
+    margin: 0px auto;
+    border-radius: 5px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: -10px;
+}
+
+.contact {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    color: #777777;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    border-bottom: 1.5px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.item {
+    margin-bottom: 10px;
+}
+
+.item h3 {
+    margin-bottom: 0px;
+}
+
+.date {
+    font-size: 0.9em;
+    color: #777777;
+}
+
+ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 70px;
+    left: 20px;
+    width: 300px;
+
+    padding: 20px;
+    padding-left: 30px;
+    background-color: #E1EBF1;
+    opacity: 0.95;
+    border-radius: 10px;
+}
+
+.toc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1024px) {
+    .background-horizontal {
+        display: none;
+    }
+    .background-vertical {
+        display: block;
+    }
+    .sidebar {
+        display: none;
+    }
+}
